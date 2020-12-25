@@ -1,4 +1,4 @@
-.main-nav__list {
+.main-nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -7,5 +7,9 @@
 
   a {
     color: $basic-black;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }

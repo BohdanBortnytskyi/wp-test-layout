@@ -24,6 +24,13 @@
   }
 }
 
+.advantages {
+
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
+  }
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -31,6 +38,12 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   a {
     color: $basic-accent;
@@ -39,12 +52,17 @@
 }
 
 .advantages__item {
-    width: 350px;
-    height: 200px;
+    // width: 340px;
+    min-height: 200px;
     padding-top: 64px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: top center;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      min-height: 150px;
+    }
 
     h3 {
       margin: 0;
@@ -87,10 +105,18 @@
 .carousel__item {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   figure {
+    padding: 0;
+    margin: 0;
     padding-top: 83px;
-    margin-right: 0;
     background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M0 32V59.4286H27.4286V32H9.14292C9.14292 21.9175 17.3461 13.7143 27.4286 13.7143V4.57141C12.3036 4.57141 0 16.875 0 32Z' fill='%233C64B1'/%3E%3Cpath d='M64.0006 13.7143V4.57141C48.8756 4.57141 36.572 16.875 36.572 32V59.4286H64.0006V32H45.7149C45.7149 21.9175 53.9181 13.7143 64.0006 13.7143Z' fill='%233C64B1'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='64' height='64' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: top left;
@@ -104,6 +130,11 @@
     font-size: 26px;
     line-height: 32px;
     letter-spacing: 0.2px;
+
+    @media (max-width: 767px) {
+      font-size: 22px;
+      line-height: 26px;
+    }
   }
 
   figcaption {
@@ -119,6 +150,16 @@
   }
 }
 
+.testimonials__carousel-controls {
+
+  @media (max-width: 1264px) {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+  }
+}
+
 .testimonials__carousel-controls .prev-slide,
 .testimonials__carousel-controls .next-slide {
   padding: 0;
@@ -130,6 +171,10 @@
   cursor: pointer;
   position: absolute;
   top: 160px;
+
+  @media (max-width: 1264px) {
+    position: inherit;
+  }
 }
 
 .testimonials__carousel-controls .prev-slide {
@@ -152,7 +197,8 @@
     margin-top: 11px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 30px;
     flex-wrap: wrap;
   }
 

@@ -2,10 +2,11 @@
 <html class="page" lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WP Test Task Layout</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="page__body">
 
@@ -15,12 +16,12 @@
         <img src="img/logo.svg" width="69" height="32" alt="WP Test Task Logo">
       </a>
       <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Items first</a></li>
-          <li class="main-nav__item"><a href="#">Items two</a></li>
-          <li class="main-nav__item"><a href="#">Items three</a></li>
-          <li class="main-nav__item"><a href="#">Items four</a></li>
-          <li class="main-nav__item"><a href="#">Items five</a></li>
+        <ul>
+          <li><a href="#">Items first</a></li>
+          <li><a href="#">Items two</a></li>
+          <li><a href="#">Items three</a></li>
+          <li><a href="#">Items four</a></li>
+          <li><a href="#">Items five</a></li>
         </ul>
       </nav>
       <a class="page-header__avatar" href="#">
@@ -29,11 +30,13 @@
     </div>
 
     <div class="page-header__bottom">
-      <h1 class="page-header__title">Sed ut perspiciatis unde omnis iste natus error sit</h1>
-      <p class="page-header__description">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te.</p>
-      <div class="page-header-buttons">
-        <button class="page-header-buttons__start-now" type="button">Start right now</button>
-        <button class="page-header-buttons__learn-more" type="button">Learn more</button>
+      <div class="container">
+        <h1 class="page-header__title">Sed ut perspiciatis unde omnis iste natus error sit</h1>
+        <p class="page-header__description">Et has minim elitr intellegat. Mea aeterno eleifend antiopam ad, nam no suscipit quaerendum. At nam minimum ponderum. Est audiam animal molestiae te.</p>
+        <div class="page-header-buttons">
+          <button class="page-header-buttons__start-now" type="button">Start right now</button>
+          <button class="page-header-buttons__learn-more" type="button">Learn more</button>
+        </div>
       </div>
     </div>
   </header>
@@ -148,7 +151,53 @@
 
   <footer class="page-footer">
     <div class="container">
-      Footer
+      <div class="page-footer__top">
+        <div class="page-footer__wrapper">
+          <a class="page-header__logo" href="#">
+            <img src="img/logo-footer.svg" width="69" height="32" alt="WP Test Task Logo">
+          </a>
+          <p class="page-footer__copyright">Copyright © 2020. LogoIpsum. All rights reserved.</p>
+        </div>
+        <div class="services">
+          <h3>Services</h3>
+          <ul class="services__list">
+            <li><a href="#">Email Marketing</a></li>
+            <li><a href="#">Campaigns</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Offline</a></li>
+          </ul>
+        </div>
+        <div class="about">
+          <h3>About</h3>
+          <ul class="about__list">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Benefits</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <button class="button-footer button-up" type="button"></button>
+      </div>
+      <div class="page-footer__bottom">
+        <div class="subscribe">
+          <h3>Subscribe to our newsletter</h3>
+          <form>
+            <input type="email" name="email" placeholder="Email address">
+            <button class="button-footer button-send" type="submit"></button>
+          </form>
+        </div>
+        <ul class="social-links">
+          <li>
+            <a href="#"><img src="img/facebook.svg" width="8" height="16" alt="Facebook"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/twitter.svg" width="20" height="16" alt="Twitter"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/instagram.svg" width="16" height="16" alt="Instagram"></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
 

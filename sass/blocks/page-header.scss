@@ -24,7 +24,7 @@
 }
 
 .page-header__title {
-  width: 730px;
+  width: 58%;
   padding: 10px;
   font-weight: bold;
   font-size: 44px;
@@ -32,20 +32,33 @@
   text-align: center;
   letter-spacing: 0.2px;
   margin-bottom: 32px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    width: 90%;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .page-header__description {
-  width: 730px;
+  width: 58%;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.3px;
+  margin: 0 auto;
   margin-bottom: 56px;
+
+  @media (max-width: 767px) {
+    width: 90%;
+  }
 }
 
 .page-header-buttons {
-  width: 282px;
-  height: 42px;
+  width: 262px;
+  min-height: 42px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 
