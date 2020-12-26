@@ -98,7 +98,7 @@
 
   input {
     width: 279px;
-    height: 47px;
+    height: 49px;
     border: 0;
     background: transparent;
     border-bottom: 1px solid #979797;
@@ -106,6 +106,8 @@
     font-size: 15px;
     line-height: 19px;
     letter-spacing: -0.204545px;
+    color: $basic-white;
+    padding: 0 10px;
 
     &::-webkit-input-placeholder {
       color: $basic-white;

@@ -1,4 +1,4 @@
-.main-nav ul {
+.main-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -11,5 +11,14 @@
 
   @media (max-width: 767px) {
     display: none;
+    background: $basic-white;
+    padding: 10px;
+    box-shadow: 1px 1px 1px $basic-accent, -1px -1px 1px $basic-accent;
+  }
+
+  li {
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
   }
 }
