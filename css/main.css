@@ -241,29 +241,33 @@ img {
   padding-bottom: 80px;
 }
 
-.testimonials__carousel {
+.slider {
   position: relative;
 }
 
-.carousel-list {
+.slider__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.carousel__item {
+.slider__item {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   align-items: center;
+  display: none;
+}
+.slider__item--current {
+  display: flex;
 }
 @media (max-width: 1024px) {
-  .carousel__item {
+  .slider__item {
     flex-direction: column;
     align-items: center;
   }
 }
-.carousel__item figure {
+.slider__item figure {
   padding: 0;
   margin: 0;
   padding-top: 83px;
@@ -271,7 +275,7 @@ img {
   background-repeat: no-repeat;
   background-position: top left;
 }
-.carousel__item blockquote {
+.slider__item blockquote {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -281,24 +285,24 @@ img {
   letter-spacing: 0.2px;
 }
 @media (max-width: 767px) {
-  .carousel__item blockquote {
+  .slider__item blockquote {
     font-size: 22px;
     line-height: 26px;
   }
 }
-.carousel__item figcaption {
+.slider__item figcaption {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.1px;
   color: #737B7D;
 }
-.carousel__item figcaption cite {
+.slider__item figcaption cite {
   font-style: normal;
 }
 
 @media (max-width: 1264px) {
-  .testimonials__carousel-controls {
+  .slider__controls {
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -306,8 +310,8 @@ img {
   }
 }
 
-.testimonials__carousel-controls .prev-slide,
-.testimonials__carousel-controls .next-slide {
+.slider__controls .prev-slide,
+.slider__controls .next-slide {
   padding: 0;
   border: 0;
   width: 18px;
@@ -319,18 +323,18 @@ img {
   top: 160px;
 }
 @media (max-width: 1264px) {
-  .testimonials__carousel-controls .prev-slide,
-.testimonials__carousel-controls .next-slide {
+  .slider__controls .prev-slide,
+.slider__controls .next-slide {
     position: inherit;
   }
 }
 
-.testimonials__carousel-controls .prev-slide {
+.slider__controls .prev-slide {
   background-image: url("data:image/svg+xml,%3Csvg width='18' height='34' viewBox='0 0 18 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 33L1 17L17 1' stroke='%233C64B1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   left: -70px;
 }
 
-.testimonials__carousel-controls .next-slide {
+.slider__controls .next-slide {
   background-image: url("data:image/svg+xml,%3Csvg width='18' height='34' viewBox='0 0 18 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 33L17 17L1 1' stroke='%233C64B1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   right: -70px;
 }

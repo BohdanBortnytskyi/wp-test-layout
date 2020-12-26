@@ -66,10 +66,10 @@
 
     <section class="testimonials">
       <h2 class="visually-hidden">Testimonials</h2>
-      <div class="testimonials__carousel container">
-        <ul class="carousel-list">
-          <li class="carousel__item">
-            <img src="img/slide1.jpg" width="540" height="350" alt="Carousel image">
+      <div class="slider container">
+        <ul class="slider__list">
+          <li class="slider__item slider__item--current">
+            <img src="img/slide1.jpg" width="540" height="350" alt="Testimonial image">
             <figure>
               <blockquote>Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet prompta reformidans.</blockquote>
               <figcaption>
@@ -77,8 +77,17 @@
               </figcaption>
             </figure>
           </li>
+          <li class="slider__item">
+            <img src="img/slide1.jpg" width="540" height="350" alt="Testimonial image">
+            <figure>
+              <blockquote>2 Est tation latine aliquip id, mea ad tale illud definitiones. Periculis omittantur necessitatibus eum ad, pro eripuit minimum comprehensam ne, usu cu stet prompta reformidans.</blockquote>
+              <figcaption>
+                <cite class="testimonial-author">2 Connie Robertson</cite> at <cite class="testimonial-company">Google</cite>
+              </figcaption>
+            </figure>
+          </li>
         </ul>
-        <div class="testimonials__carousel-controls">
+        <div class="slider__controls">
           <button type="button" class="prev-slide" aria-label="Previous Slide"></button>
           <button type="button" class="next-slide" aria-label="Next Slide"></button>
         </div>
@@ -225,5 +234,6 @@
   </section>
 
   <script src="js/popup.js"></script>
+  <script src="js/testimonials-slider.js"></script>
 </body>
 </html>
