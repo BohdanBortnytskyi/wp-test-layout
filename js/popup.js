@@ -1,13 +1,13 @@
 'use strict';
 
 (function () {
-  var userLink = document.querySelector(".page-header__avatar");
+  var btnStartNow = document.querySelector(".page-header-buttons__start-now");
   var loginPopup = document.querySelector(".popup--login");
 
   if (loginPopup) {
     var popupClose = loginPopup.querySelector(".popup__button-close");
 
-    userLink.addEventListener("click", function (evt) {
+    btnStartNow.addEventListener("click", function (evt) {
       evt.preventDefault();
       loginPopup.classList.add("popup-show");
     });

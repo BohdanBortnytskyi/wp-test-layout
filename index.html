@@ -210,18 +210,17 @@
     </div>
   </footer>
 
-  <!-- Popup form -->
   <section class="popup popup--login">
     <div class="popup__wrapper">
       <h2>Log in</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="login-form" method="post">
         <p>
           <label for="login-form__email">Email:</label>
-          <input id="login-form__email" class="login-form__email" type="email" name="email">
+          <input id="login-form__email" class="login-form__email" type="email" name="email" required>
         </p>
         <p>
           <label for="login-form__password">Password:</label>
-          <input id="login-form__password" class="login-form__password" type="password" name="password">
+          <input id="login-form__password" class="login-form__password" type="password" name="password" required>
         </p>
         <button type="submit" class="login-form__submit">Submit</button>
         <p>
@@ -235,6 +234,6 @@
 
   <script src="js/popup.js"></script>
   <script src="js/testimonials-slider.js"></script>
-  <script src="js/scroll-top.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>
