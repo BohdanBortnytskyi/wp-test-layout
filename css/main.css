@@ -440,7 +440,7 @@ img {
   background-position: center;
   cursor: pointer;
 }
-.page-footer .button-up {
+.page-footer .button-top {
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.6333 13.3459L10.8125 9.52511L6.99167 13.3459L5.8125 12.1668L10.8125 7.16678L15.8125 12.1668L14.6333 13.3459Z' fill='%235E4DCD'/%3E%3C/svg%3E%0A");
 }
 .page-footer .button-send {
